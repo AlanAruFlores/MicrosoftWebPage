@@ -7,3 +7,33 @@ body{
     background-repeat: no-repeat;
     background-blend-mode: darken;
 }
+
+header{
+    height: 80px;
+    background-color: #0A0A0A;
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+}
+header nav ul{
+    margin-left: 0px;
+    display: inline-flex;
+}
+header ul li{
+    list-style-type: none;
+    margin: 0 14px;
+}
+header h1{
+    font-size: 24px;
+    font-weight: 200;
+    text-align: center;
+    margin-left:40px;
+}
+
+footer{
+    height: 80px;
+    background-color: #0A0A0A;
+    font-size: 16px;
+    font-weight: 400;
+    padding:20px;
+}
