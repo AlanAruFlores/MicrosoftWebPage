@@ -1,0 +1,9 @@
+*{
+    color: aliceblue;
+}
+body{
+    background:rgba(0, 0, 0, 0.8) url("../images/font-web.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+}
