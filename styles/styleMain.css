@@ -37,3 +37,74 @@ footer{
     font-weight: 400;
     padding:20px;
 }
+
+/*Main*/
+.classInformation{
+    background-color: white;
+    height: 400px;
+    justify-content: center;
+    display: flex;
+}
+.classInformation img{
+    height: 300px;
+    width: 370px;
+}
+.classInformationAboutUs{
+    background-color: white;
+    height: 200px;
+    padding: 0px 80px;
+}
+.classInformationAboutUs h2{
+    color: #0A0A0A;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+}
+.classInformationAboutUs p{
+    color: #0A0A0A;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 200;
+}
+.claseFormulario{
+    background: rgba(0, 0, 0, 0.8) url("../images/font-wood.jpg");
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 480px;
+}
+.claseFormulario form{
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    margin: 40px auto;
+    text-align: center;
+}
+.claseFormulario form h2{
+    color:#0A0A0A;
+    font-size: 28px;
+    font-weight: 400;
+    margin: 14px 0px;
+    padding: 4px 0px;
+}
+.claseFormulario form input{
+    margin: 10px 0px;
+    border-radius: 8px;
+    width: 200px;
+    height: 40px;
+    color: #0A0A0A
+}
+.classInformation form input ::placeholder{
+    color: #fff;
+}
+
+.claseFormulario form button{
+    width: 200px;
+    height: 40px;
+    background-color: #0A0A0A;
+    color: aliceblue;
+}
+.classInformation form button :hover{
+    background-color: white;
+    color: #0A0A0A;
+}
