@@ -4,24 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styleMain.css">
     <title>Restaurante</title>
 </head>
 <body>
     <header>
-        <h1>Mi Restaurante</h1>
+        <h1>Restaurante</h1>
         <nav>
             <ul>
-                <li>
-                    Drinks
-                </li>
-                <li>
-                    Logo
-                </li>
-                <li>
-                    Food
-                </li>
+                <a href="#reserva">                <li>
+                    Reservar
+                </li></a>
+                <a href="#menu">                <li>
+                    Menu
+                </li></a>
+                <a href="#contactenos">                <li>
+                    Contacto
+                </li></a>
             </ul>
         </nav> 
     </header>
@@ -33,27 +40,51 @@
             <h2>HOLA USUARIO, BIENVENIDO AL RESTAURANTE</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda similique magni, perferendis dolore sapiente quibusdam aperiam alias? Qui impedit aliquid perferendis harum alias pariatur cumque voluptate earum. Eveniet amet atque voluptatibus provident ipsum doloremque cupiditate sapiente. Repudiandae, cumque aspernatur! Tempore.</p>
        </div>
-        <div class ="claseFormulario row">   
+        <div class ="claseFormulario row" id="reserva">   
             <div class="col">
                 <form action="">
+                    <img src="images/restaurante-logo.png" alt="logo" width="88px" height="60px">
                     <h2>Reserva tu Lugar</h2>
-                    <input type="text" placeholder="Nombre"><br>
-                    <input type="text" placeholder="Apellido"><br>
-                    <input type="number" placeholder="DNI"><br>
-                    <input type="date"><br>
-                    <button>Enviar</button>
-                    
+                    <input type="text" placeholder="Nombre" required><br>
+                    <input type="text" placeholder="Apellido" required><br>
+                    <input type="number" placeholder="DNI" required><br>
+                    <input type="date" required><br>
+                    <button id="buttonEnviar">Enviar</button>
                 </form>
             </div>  
-            <div class="col">
-                <h2>Contactanos</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae eligendi mollitia obcaecati nam facilis eaque quo autem quia, expedita aspernatur, amet illum corporis officia perspiciatis vel aliquid ex deleniti non sunt fugit cumque nobis est nulla? Iste voluptatem voluptas nihil.</p>         
-                <button>Consultar</button>
+            <div class="informacionDetallada col">
+                <h2>No te resistas</h2>
+                <p id ="introduccion">¡Oye tu!, No te pierdas la oportunidad de consumir nuestro grandes platillos. Solamente ven a nuestra sucursal o registrate en este formulario</p>   
+                <p>Completa todos los datos solicitados en el formulario. Ingrese su nombre, apellido, dni y fecha de turno</p>
+                <p>¡Muchas Gracias!</p>
+                <p>Cualquier duda no olvides en escribirnos en este mail.</p>    
+                <p>example@gmail.com</p>  
             </div>  
+        </div>
+        <div class="menuComida row" id="menu">
+            <h2>MENU</h2>
+            <div class="col">
+                <button class="buttonComida">BEBIDAS</button>
+            </div>
+            <div class="col">
+                <button class="buttonComida">COMIDAS</button>
+            </div>
+        </div>
+        <div class="contactUs row" id="contactenos">
+            <div class="logoImage col">
+
+            </div>
+            <div class="contact col">
+                <h2>Contactenos</h2>
+                <p>Cualquier duda que posea, no dude en comentarnos.</p>
+                <p>+54 9 1121334</p>
+                <p>example@gmail.com</p>
+                <p>Muchas Gracias por su visita en mi pagina web</p>
+            </div>
         </div>
     </main>
     <footer>
-        Web Design Cardiff by The Alan Aruquipa
+        Web Diseñado por Alan Aruquipa
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>

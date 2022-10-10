@@ -1,6 +1,8 @@
 *{
     color: aliceblue;
+    font-family: 'Shadows Into Light Two';
 }
+
 body{
     background:rgba(0, 0, 0, 0.8) url("../images/font-web.jpg");
     background-size: cover;
@@ -19,12 +21,22 @@ header nav ul{
     margin-left: 0px;
     display: inline-flex;
 }
+header ul a{
+    color: white;
+}
 header ul li{
     list-style-type: none;
     margin: 0 14px;
+    font-size: 18px;
+}
+header ul a:hover{
+    color:white;
+}
+header ul li:hover{
+    font-weight: 400;
 }
 header h1{
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 200;
     text-align: center;
     margin-left:40px;
@@ -40,7 +52,10 @@ footer{
 
 /*Main*/
 .classInformation{
-    background-color: white;
+    background: rgba(0,0,0,0.8) url("../images/font-web.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
     height: 400px;
     justify-content: center;
     display: flex;
@@ -50,34 +65,37 @@ footer{
     width: 370px;
 }
 .classInformationAboutUs{
-    background-color: white;
+    background: rgba(0,0,0,0.8) url("../images/font-web.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
     height: 200px;
     padding: 0px 80px;
 }
 .classInformationAboutUs h2{
-    color: #0A0A0A;
+    color: white;
     text-align: center;
     font-size: 24px;
     font-weight: 400;
 }
 .classInformationAboutUs p{
-    color: #0A0A0A;
+    color: white;
     text-align: center;
     font-size: 18px;
     font-weight: 200;
 }
 .claseFormulario{
-    background: rgba(0, 0, 0, 0.8) url("../images/font-wood.jpg");
+    background: rgba(0, 0, 0, 0.6) url("../images/font-wood.jpg");
     background-blend-mode: darken;
     background-repeat: no-repeat;
     background-size:cover;
     height: 480px;
 }
 .claseFormulario form{
-    height: 400px;
+    height: 440px;
     width: 400px;
     background-color: white;
-    margin: 40px auto;
+    margin: 20px auto;
     text-align: center;
 }
 .claseFormulario form h2{
@@ -89,12 +107,12 @@ footer{
 }
 .claseFormulario form input{
     margin: 10px 0px;
-    border-radius: 8px;
+    border-radius: 4px;
     width: 200px;
     height: 40px;
     color: #0A0A0A
 }
-.classInformation form input ::placeholder{
+.claseFormulario form input ::placeholder{
     color: #fff;
 }
 
@@ -104,7 +122,94 @@ footer{
     background-color: #0A0A0A;
     color: aliceblue;
 }
-.classInformation form button :hover{
+#buttonEnviar:hover{
     background-color: white;
     color: #0A0A0A;
 }
+.claseFormulario .informacionDetallada{
+    height: 448px;
+    width: 400px;
+    margin: 10px 0px;
+    background-color: #182130;
+    font-size: 20px;
+    font-weight: 200;
+}
+.informacionDetallada #introduccion{
+    font-weight: 400;
+}
+.informacionDetallada h2{
+    font-size: 40px;
+    font-weight: 400;
+}
+/*Menu*/
+.menuComida{
+    background: rgba(0,0,0,0.4) url("../images/font-menu.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    background-blend-mode: darken;
+}
+.menuComida h2{
+    color: white;
+    background-color: #182130;
+    height: 60px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 200;
+}
+.menuComida .col{
+    display: flex;
+    justify-content: center;
+}
+.menuComida button{
+    margin: 20px 20px;
+    background-color: #182130;
+    height: 80px;
+    width: 400px;
+    font-size: 40px;
+    font-weight: 200;
+    border: none;
+}
+.menuComida .buttonComida:hover{
+    background-color: whitesmoke;
+    color: #0A0A0A;
+}
+/*Contactos*/
+.contactUs{
+    height: 400px;
+    background-color: #182130;
+}
+.contactUs .logoImage{
+    background: url("../images/restaurante-logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.contactUs .contact h2{
+    font-size: 40px;
+    font-weight: 200;
+}
+.contactUs .contact{
+    font-size: 24px;
+    font-weight: 200;
+}
+/*Informacion Consultas
+.contactUs{
+    background-color: #0A0A0A;
+    font-size: 20px;
+    font-weight: 200;
+}
+.contactUs h2{
+    font-weight: 200;
+}
+.contactUs button{
+    background-color: white;
+    color:#0A0A0A;
+    height: 48px;
+    width: 200px;
+}
+#buttonConsultar:hover{
+    background-color: #0A0A0A;
+    color: white;
+}
+*/
